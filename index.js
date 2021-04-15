@@ -17,17 +17,17 @@ ${answers.description}
 ## Table of Contents
 
 <ul>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-<li>Fourth item</li>
+<li>[Installation](#installation)</li>
+<li>[Usage](#usage)</li>
+<li>[License]</li>
+<li>[Contributors]</li>
 </ul>
 
 ## Installation
 
 To install necessary dependencies, run the following command:
 
-> init i ${answers.command}
+> init i ${answers.installation}
 
 ## Usage
 `;
@@ -62,8 +62,23 @@ inquirer
     },
     {
       type: 'input',
-      name: 'command',
+      name: 'installation',
       message: 'What command should be run to install dependencies?',
+    },
+    {
+    type: 'input',
+    name: 'tests',
+    message: 'What command should be run to run tests?',
+    },
+    {
+    type: 'input',
+    name: 'usage',
+    message: 'What does the user need to know about using the repo?',
+    },
+    {
+    type: 'input',
+    name: 'contributions',
+    message: 'What does the user need to know about contributing to the repo?',
     },
   ])
   .then((answers) => {

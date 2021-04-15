@@ -9,10 +9,10 @@
 ## Table of Contents
 
 <ul>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-<li>Fourth item</li>
+<li>[Installation](#installation)</li>
+<li>[Usage](#usage)</li>
+<li>[License]</li>
+<li>[Contributors]</li>
 </ul>
 
 ## Installation
