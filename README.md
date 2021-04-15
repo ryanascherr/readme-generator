@@ -1,27 +1,25 @@
-# Dungeons & Dragons Monster Creator
+# 
 
 [![License: undefined](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
   
 ## Description
 
-Use this application to create your very own custom monsters.
+
 
 ## Table of Contents
 
-<ul>
-<li>[Installation](#installation)</li>
-<li>[Usage](#usage)</li>
-<li>[License]</li>
-<li>[Contributors]</li>
-</ul>
+- [Installation Instructions](#installation-instructions)
+- [Test Instructions](#test-instructions)
+- [Usage](#usage)
+- [Questions](#questions)
 
-## Installation
+## Installation Instructions
 
 To install necessary dependencies, run the following command:
 
 > init i 
 
-## Tests
+## Test Instructions
 
 To run tests, run the following command:
 
@@ -29,11 +27,11 @@ To run tests, run the following command:
 
 ## Usage
 
-Nothing unusual here. Move along.
+
 
 ## Questions
 
-Have questions? Contact this project's creator at ryanscherr@gmail.com.
+Have questions? Contact this project's creator at .
 
-Their GitHub username is ryanascherr.
+Their GitHub username is .
 

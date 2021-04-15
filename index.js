@@ -16,20 +16,18 @@ ${answers.description}
 
 ## Table of Contents
 
-<ul>
-<li>[Installation](#installation)</li>
-<li>[Usage](#usage)</li>
-<li>[License]</li>
-<li>[Contributors]</li>
-</ul>
+- [Installation Instructions](#installation-instructions)
+- [Test Instructions](#test-instructions)
+- [Usage](#usage)
+- [Questions](#questions)
 
-## Installation
+## Installation Instructions
 
 To install necessary dependencies, run the following command:
 
 > init i ${answers.installation}
 
-## Tests
+## Test Instructions
 
 To run tests, run the following command:
 
