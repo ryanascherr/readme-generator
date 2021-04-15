@@ -29,7 +29,22 @@ To install necessary dependencies, run the following command:
 
 > init i ${answers.installation}
 
+## Tests
+
+To run tests, run the following command:
+
+> npm test ${answers.tests}
+
 ## Usage
+
+${answers.usage}
+
+## Questions
+
+Have questions? Contact this project's creator at ${answers.email}.
+
+Their GitHub username is ${answers.username}.
+
 `;
 
 inquirer
@@ -66,19 +81,19 @@ inquirer
       message: 'What command should be run to install dependencies?',
     },
     {
-    type: 'input',
-    name: 'tests',
-    message: 'What command should be run to run tests?',
+      type: 'input',
+      name: 'tests',
+      message: 'What command should be run to run tests?',
     },
     {
-    type: 'input',
-    name: 'usage',
-    message: 'What does the user need to know about using the repo?',
+      type: 'input',
+      name: 'usage',
+      message: 'What does the user need to know about using the repo?',
     },
     {
-    type: 'input',
-    name: 'contributions',
-    message: 'What does the user need to know about contributing to the repo?',
+      type: 'input',
+      name: 'contributing',
+      message: 'What does the user need to know about contributing to the repo?',
     },
   ])
   .then((answers) => {
