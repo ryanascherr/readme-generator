@@ -8,7 +8,7 @@ const questions = [];
 const generateREADME = (answers) =>
 `# ${answers.name}
 
-[![License: ${answers.license}](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License${answers.licenseOne}](https://img.shields.io/badge/License-${answers.licenseTwo}-blue.svg)](https://opensource.org/licenses/${answers.licenseThree})
   
 ## Description
 
@@ -52,6 +52,8 @@ ${answers.contributing}
 Have questions? Contact this project's creator at ${answers.email}.
 
 Their GitHub profile page is github.com/${answers.username}.
+
+${answers.test}
 
 `;
 
@@ -105,6 +107,37 @@ inquirer
     },
   ])
   .then((answers) => {
+
+    if (answers.license === "MIT") {
+      answers.licenseOne = ": MIT";
+      answers.licenseTwo = "MIT";
+      answers.licenseThree = "MIT";
+    }
+
+    if (answers.license === "APACHE 2.0") {
+      answers.licenseOne = "";
+      answers.licenseTwo = "Apache%202.0";
+      answers.licenseThree = "Apache-2.0";
+    }
+
+    if (answers.license === "GPL 3.0") {
+      answers.licenseOne = ": GPL v3";
+      answers.licenseTwo = "GPLv3";
+      answers.licenseThree = "gpl-3.0";
+    }
+
+    if (answers.license === "BSD 3") {
+      answers.licenseOne = "";
+      answers.licenseTwo = "BSD%203--Clause";
+      answers.licenseThree = "BSD-3-Clause";
+    }
+
+    if (answers.license === "None") {
+      answers.licenseOne = "";
+      answers.licenseTwo = "";
+      answers.licenseThree = "";
+    }
+
     const readmePageContent = generateREADME(answers);
 
     fs.writeFile('readme.md', readmePageContent, (err) =>
