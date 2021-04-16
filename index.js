@@ -16,18 +16,20 @@ ${answers.description}
 
 ## Table of Contents
 
-- [Installation Instructions](#installation-instructions)
-- [Test Instructions](#test-instructions)
+- [Installation](#installation)
 - [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
 - [Questions](#questions)
 
-## Installation Instructions
+## Installation
 
 To install necessary dependencies, run the following command:
 
-> init i ${answers.installation}
+> npm i ${answers.installation}
 
-## Test Instructions
+## Tests
 
 To run tests, run the following command:
 
@@ -37,11 +39,19 @@ To run tests, run the following command:
 
 ${answers.usage}
 
+## License
+
+This application is covered under the following license: ${answers.license}
+
+## Contributing
+
+${answers.contributing}
+
 ## Questions
 
 Have questions? Contact this project's creator at ${answers.email}.
 
-Their GitHub username is ${answers.username}.
+Their GitHub profile page is github.com/${answers.username}.
 
 `;
 
@@ -69,19 +79,19 @@ inquirer
     },
     {
       type: 'list',
-      name: 'liscense',
+      name: 'license',
       message: 'What kind of license should your project have?',
       choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
     },
     {
       type: 'input',
       name: 'installation',
-      message: 'What command should be run to install dependencies?',
+      message: 'What command should be run to install dependencies? (npm i)',
     },
     {
       type: 'input',
       name: 'tests',
-      message: 'What command should be run to run tests?',
+      message: 'What command should be run to run tests? (npm test)',
     },
     {
       type: 'input',
