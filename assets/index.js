@@ -5,10 +5,12 @@ const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = [];
 
+// [![License${answers.licenseOne}](https://img.shields.io/badge/License-${answers.licenseTwo}-blue.svg)](https://opensource.org/licenses/${answers.licenseThree})
+
 const generateREADME = (answers) =>
 `# ${answers.name}
 
-[![License${answers.licenseOne}](https://img.shields.io/badge/License-${answers.licenseTwo}-blue.svg)](https://opensource.org/licenses/${answers.licenseThree})
+${answers.badge}
   
 ## Description
 
@@ -52,8 +54,6 @@ ${answers.contributing}
 Have questions? Contact this project's creator at ${answers.email}.
 
 Their GitHub profile page is github.com/${answers.username}.
-
-${answers.test}
 
 `;
 
@@ -136,6 +136,12 @@ inquirer
       answers.licenseOne = "";
       answers.licenseTwo = "";
       answers.licenseThree = "";
+    }
+
+    if (answers.license === "None") {
+      answers.badge = "";
+    } else {
+      answers.badge = `[![License${answers.licenseOne}](https://img.shields.io/badge/License-${answers.licenseTwo}-blue.svg)](https://opensource.org/licenses/${answers.licenseThree})`;
     }
 
     const readmePageContent = generateREADME(answers);

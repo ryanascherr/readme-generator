@@ -1,10 +1,10 @@
-# 
+# Readme Generator
 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
   
 ## Description
 
-
+Users can use the readme generator to easily create a readme for their own projects. Users need only answer a few questions and the readme will be created, styled, and organized automatically.
 
 ## Table of Contents
 
@@ -29,21 +29,19 @@ To run tests, run the following command:
 
 ## Usage
 
-
+Both fs and inquirer are required to use this.
 
 ## License
 
-This application is covered under the following license: BSD 3
+This application is covered under the following license: None
 
 ## Contributing
 
-
+Feel free to make any contributions.
 
 ## Questions
 
-Have questions? Contact this project's creator at .
+Have questions? Contact this project's creator at ryanscherr@gmail.com.
 
-Their GitHub profile page is github.com/.
-
-undefined
+Their GitHub profile page is github.com/ryanascherr.
 
