@@ -1,10 +1,10 @@
-# ergergr
+# Ryan's Super Cool Project
 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
 ## Description
 
-regrgeg
+It's really cool!
 
 ## Table of Contents
 
@@ -29,19 +29,19 @@ To run tests, run the following command:
 
 ## Usage
 
-ergrgrg
+Please don't steal my code :)
 
 ## License
 
-This application is covered under the following license: BSD 3
+This application is covered under the following license: APACHE 2.0
 
 ## Contributing
 
-ergergrg
+Feel free to contribute!
 
 ## Questions
 
-Have questions? Contact this project's creator at ergergreg.
+Have questions? Contact this project's creator at ryanascherr@gmail.com.
 
-Their GitHub profile page is github.com/efgerg.
+Their GitHub profile page is github.com/ryanascherr.
 

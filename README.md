@@ -29,7 +29,7 @@ To run tests, run the following command:
 
 ## Usage
 
-Both fs and inquirer are required to use this.
+Both fs and inquirer are required to use the readme generator. Users will be prompted to answer a series of questions in the terminal. Once all of the questions are answered, a professionally organized readme will be created will be created with the information from the answered questions.
 
 ## License
 
